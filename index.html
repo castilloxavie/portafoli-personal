@@ -20,14 +20,14 @@
 
 </head>
 <body>
-    <!-- diseño de encabezado -->
-    <header class="header">
+    <div class="contenedor-general">
+        <!-- diseño de encabezado -->
+    <header class="header activo">
         <a href="" class="logo">Xavier.<span class="animate" style="--i:1;"></span></a>
 
-        <div class="bx bx-menu" id="menu-icom"><span class="animate" style="--i:2;"></span></div>
 
-        <nav class="navbar">
-            <a href="#inicio" class="activo">Inicio</a>
+        <nav class="navbar ">
+            <a href="#inicio" class="">Inicio</a>
             <a href="#sobre-mi">Sobre mi</a>
             <a href="#educacion">Educacion</a>
             <a href="#habilidades">Habilidades</a>
@@ -37,12 +37,13 @@
             <span class="activo-nav"></span>
             <span class="animate" style="--i:2;"></span>
         </nav>
+        
     </header>
-
+    <div class="bx bx-menu" id="menu-icom"><span class="animate" style="--i:2;"></span></div>
 
     <!-- diseño de la sección de inicio -->
     <section class="inicio mostrar-animacion" id="inicio">
-        
+       
         <div class="contenido-inicio">
             <h1>Hola, Soy <span>Xavier Castillo</span></h1>
             
@@ -55,22 +56,28 @@
             </p>
 
             <div class="boton-caja">
-                <a href="#contacto" class="boton">Contratame</a>
-                <a href="#pie-pagina" class="boton">Hablemos</a>
+                <div class="caja">
+                    <a href="#contacto" class="boton">Contratame</a>
+                    <a href="#pie-pagina" class="boton">Hablemos</a>
+                </div>
+                
+
+                <div class="inicio-redes--sociales">
+                    <a href="https://www.facebook.com/xavieralberto.castillovaron?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/castilloxavie" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/xavier-alberto-castillo-varon/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
             </div>
         </div>
 
         <div class="imagen-container">
             <img src="./assets/img/inicio-removebg.png" alt="Xavier" class="imagen-derecha">
+            <div class="inicio-imghover"></div>
         </div>
 
-        <div class="inicio-redes--sociales">
-            <a href="https://www.facebook.com/xavieralberto.castillovaron?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
-            <a href="https://github.com/castilloxavie" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/xavier-alberto-castillo-varon/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        </div>
+       
 
-        <div class="inicio-imghover"></div>
+        
     </section>
 
     <!-- diseño de la seccion "Sobre mi" -->
@@ -286,7 +293,7 @@
 
     <!-- diseño de la seccion de Contacto -->
     <section class="contacto" id="contacto">
-        <h2 class="titulo">Contacte<span>me!</span></h2>
+        <h2 class="titulo titulo-contacto">Contacte<span class="titulo-contacto">me!</span></h2>
 
         <form action="#">
             <div class="caja-entrada">
@@ -382,6 +389,8 @@
             <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
+    </div>
+    
 
     <script src="./js/script.js"></script>
 </body>

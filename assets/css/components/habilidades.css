@@ -124,8 +124,14 @@
 }
 
 @media (max-width: 1200px) {
+
+    .habilidades {
+        padding: 0 2rem;
+    }
+    
     .habilidades .habilidades-fila {
         gap: 3rem;
+
     }
   
     .contenido-habilidades .progreso .bar span {

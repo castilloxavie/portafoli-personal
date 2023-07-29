@@ -90,7 +90,8 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+    
     .contacto form .caja-entrada .campo-entrada {
         width: 100%;
     }

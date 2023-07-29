@@ -12,6 +12,7 @@
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
+    
 }
 
 span {
@@ -93,7 +94,7 @@ span {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .sobre-mi--img {
         width: 18rem;
         height: 18rem;
@@ -101,7 +102,18 @@ span {
   
     .titulo {
         font-size: 4rem;
+
     }
+
+    .titulo-contacto {
+        font-size: 3rem;
+        
+    }
+
+    .sobre-mi {
+        margin-top: 3rem;
+    }
+
 }
 
 @keyframes aboutSpinner {

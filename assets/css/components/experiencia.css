@@ -28,13 +28,14 @@
 
 .contenedor-proyecto {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.productos {
-    flex-basis: 35%;
+.productos{
+    flex-basis: 30%;
     background: var(--second-bg-color);
     display: flex;
     padding: 2rem;
@@ -43,6 +44,14 @@
     justify-content: center;
     align-items: center;
     
+    
+}
+
+.productos a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .productos:hover {
@@ -66,12 +75,16 @@
 
 
 @media (max-width: 1200px) {
+    .productos {
+        flex-basis: 40%;
+    }
+
     .contenedor-proyecto {
         gap: 1rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .experiencia {
         flex-direction: column;
         gap: 0.5rem;
@@ -82,16 +95,20 @@
     }
     
     .productos {
-        flex-basis: 45%;
+        flex-basis: 70%;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .contenedor-proyecto {
         justify-content: center;
     }
     
     .productos {
-        flex-basis: 90%;
+        
+        flex-basis: 70%;
+    }
+    .titul {
+        font-size: 1.5rem;
     }
 }

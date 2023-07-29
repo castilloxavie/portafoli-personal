@@ -1,6 +1,6 @@
 // barra de navegacion
 let menuIcon = document.querySelector('#menu-icom');
-let navbar = document.querySelector('.navbar')
+let navbar = document.querySelector('.header')
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
