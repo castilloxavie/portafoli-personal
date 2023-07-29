@@ -63,3 +63,35 @@
     text-align: center;
     color: var(--text-color);
 }
+
+
+@media (max-width: 1200px) {
+    .contenedor-proyecto {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experiencia {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .contenedor-proyecto {
+        gap: 1rem;
+    }
+    
+    .productos {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-proyecto {
+        justify-content: center;
+    }
+    
+    .productos {
+        flex-basis: 90%;
+    }
+}

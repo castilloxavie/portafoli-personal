@@ -122,3 +122,43 @@
 .habilidades-columna:nth-child(2) .contenido-habilidades .progreso:nth-child(6) .bar span {
     width: 75%;
 }
+
+@media (max-width: 1200px) {
+    .habilidades .habilidades-fila {
+        gap: 3rem;
+    }
+  
+    .contenido-habilidades .progreso .bar span {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .habilidades .habilidades-fila {
+        flex-direction: column;
+        gap: 2rem;
+    }
+  
+    .habilidades-fila .habilidades-columna {
+        flex: 1 1 100%;
+    }
+  
+    .contenido-habilidades .progreso .bar span {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .habilidades .habilidades-fila {
+        flex-direction: column;
+        gap: 2rem;
+    }
+  
+    .habilidades-fila .habilidades-columna {
+        flex: 1 1 100%;
+    }
+  
+    .contenido-habilidades .progreso .bar span {
+        width: 100%;
+    }
+}

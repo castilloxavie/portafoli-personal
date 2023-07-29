@@ -71,3 +71,27 @@
 .contacto form .boton-caja.botones .boton {
     cursor: pointer;
 }
+
+
+@media (max-width: 1200px) {
+    .contacto form {
+        max-width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contacto form .caja-entrada {
+        flex-direction: column;
+    }
+    
+    .contacto form .caja-entrada .campo-entrada {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto form .caja-entrada .campo-entrada {
+        width: 100%;
+    }
+}

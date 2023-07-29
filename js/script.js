@@ -24,7 +24,13 @@ window.onscroll = () => {
             navLinks.forEach(links => {
                 links.classList.remove('activo')
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('activo')
-            })
+            });
+            // seccion activa para la amimacion con el de desplazar
+            sec.classList.add('mostrar-animacion');
+        }
+        // si desea usar la repetición de animación en el desplazamiento, use this
+        else {
+            sec.classList.remove('mostrar-animacion');
         }
     });
 
@@ -34,7 +40,11 @@ window.onscroll = () => {
 
     
     // elimine el ícono de alternar y la barra de navegación cuando haga clic en el enlace de la barra de navegación (desplazamiento)
-    
+    menuIcon.classList.remove('bx-x')
+    navbar.classList.remove('activo')
+
+    let footer = document.querySelector('pie-pagina');
+    footer
 }
 
 

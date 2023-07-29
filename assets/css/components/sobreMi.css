@@ -46,6 +46,7 @@ span {
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
+    animation: aboutSpinner 8s linear infinite;
 }
 
 .sobre-mi--contenido {
@@ -68,4 +69,43 @@ span {
 
 .boton-caja.botones a::before {
     background: var(--second-bg-color);
+}
+
+@media (max-width: 1200px) {
+    .sobre-mi--img {
+        width: 22rem;
+        height: 22rem;
+    }
+  
+    .titulo {
+        font-size: 4.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-mi--img {
+        width: 20rem;
+        height: 20rem;
+    }
+  
+    .titulo {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-mi--img {
+        width: 18rem;
+        height: 18rem;
+    }
+  
+    .titulo {
+        font-size: 4rem;
+    }
+}
+
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }

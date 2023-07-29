@@ -50,3 +50,15 @@
 .pie-pagina--iconoArriba a:hover i {
     color: var(--main-color);
 }
+
+@media (max-width: 768px) {
+    .pie-pagina {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .pie-pagina {
+        justify-content: center;
+    }
+}

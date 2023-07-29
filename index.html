@@ -22,9 +22,9 @@
 <body>
     <!-- diseño de encabezado -->
     <header class="header">
-        <a href="" class="logo">Xavier.</a>
+        <a href="" class="logo">Xavier.<span class="animate" style="--i:1;"></span></a>
 
-        <div class="bx bx-menu" id="menu-icom"></div>
+        <div class="bx bx-menu" id="menu-icom"><span class="animate" style="--i:2;"></span></div>
 
         <nav class="navbar">
             <a href="#inicio" class="activo">Inicio</a>
@@ -35,26 +35,28 @@
             <a href="#experiencia">Proyectos</a>
             
             <span class="activo-nav"></span>
+            <span class="animate" style="--i:2;"></span>
         </nav>
     </header>
 
 
     <!-- diseño de la sección de inicio -->
-    <section class="inicio" id="inicio">
+    <section class="inicio mostrar-animacion" id="inicio">
         
         <div class="contenido-inicio">
             <h1>Hola, Soy <span>Xavier Castillo</span></h1>
             
             <div class="animacio-texto">
                 <h3>Developer Jr Full Stack </h3>
+                
             </div>
             <p>
                 ¡Hola! Soy un apasionado Developer Jr con conocimientos en Python, Django, HTML, CSS, JS y bases de datos relacionales. Mi nivel es intermedio y continúo mi aprendizaje en plataformas como Platzi, Alura Latam y Academlo para mejorar mis habilidades en desarrollo web. ¡Estoy emocionado por enfrentar nuevos retos y seguir creciendo como profesional! 💻🚀
             </p>
 
             <div class="boton-caja">
-                <a href="#" class="boton">Contratame</a>
-                <a href="#" class="boton">Hablemos</a>
+                <a href="#contacto" class="boton">Contratame</a>
+                <a href="#pie-pagina" class="boton">Hablemos</a>
             </div>
         </div>
 
@@ -369,8 +371,8 @@
 
     <!-- diseño del pie de pagina -->
 
-    <footer class="pie-pagina">
-        <div class="pie-pagina--texto">
+    <footer class="pie-pagina" id="pie-pagina">
+        <div class="pie-pagina--texto pie">
             <p>Copyright &copy; 2023 </p>
             <p>Desarrollado por Xavier Castillo</p>
             <p>xcastillovaron93@gmail.com</p>

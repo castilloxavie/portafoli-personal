@@ -15,6 +15,8 @@ section {
     margin-left: auto;
     max-width: 750px;
     margin-right: auto;
+    border-radius: 50%;
+    height: 20%;
 }
 
 
@@ -24,6 +26,8 @@ section {
 }
 
 .contenido-inicio h1 {
+    position: relative;
+    display: inline-block;
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.3;
@@ -43,6 +47,25 @@ section {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke:  .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -33rem 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.contenido-inicio .animacio-texto h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid --main-color;
+    z-index: -1;
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
 }
 
 .contenido-inicio p {
@@ -171,3 +194,84 @@ section {
     background: var(--bg-color);
     opacity: .8;
 }
+
+@media (max-width: 1200px) {
+    .imagen-derecha {
+        max-width: 500px;
+    }
+
+    .boton-caja {
+        width: 30rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .inicio {
+        flex-direction: column;
+    }
+    
+    .imagen-derecha {
+        width: 70%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .contenido-inicio {
+        max-width: 100%;
+    }
+    
+    .contenido-inicio h1 {
+        font-size: 4.6rem;
+    }
+    
+    .contenido-inicio .animacio-texto {
+        width: 100%;
+    }
+    
+    .boton-caja {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .inicio-redes--sociales {
+        bottom: 2rem;
+    }
+    
+    .inicio-redes--sociales a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+
+/* animaciones */
+
+@keyframes  homeBgText {
+    0%, 10%, 100% {
+        background-position: -33rem 0;
+    }
+
+    65%, 85% {
+        background-position: 0 0;
+    }
+}  
+
+@keyframes  homeCursorText {
+    0%, 10%, 100% {
+        width: 0;
+    }
+
+    65%, 78%, 85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%, 81% {
+        opacity: 0;
+    }
+}  
