@@ -1,0 +1,52 @@
+.pie-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.pie-pagina--texto p {
+    font-size: 1.6rem;
+}
+
+.pie-pagina--iconoArriba a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.pie-pagina--iconoArriba a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.pie-pagina--iconoArriba a:hover:before{
+    width: 100%;
+}
+
+.pie-pagina--iconoArriba a i {
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
+
+.pie-pagina--iconoArriba a:hover i {
+    color: var(--main-color);
+}

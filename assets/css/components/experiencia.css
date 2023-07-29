@@ -1,0 +1,65 @@
+.experiencia {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.contenedor-experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.titulo-experiencia {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.contenedor-proyecto {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.productos {
+    flex-basis: 35%;
+    background: var(--second-bg-color);
+    display: flex;
+    padding: 2rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.productos:hover {
+    background: var(--bg-color);
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 10px 5px 5px rgb(14, 227, 11);
+    opacity: .8 ;
+}
+
+.productos img {
+    width: 90%;
+    margin-bottom: 1.2em;
+    border-radius: 0.5rem;
+}
+
+.productos a div h2 {
+    text-align: center;
+    color: var(--text-color);
+}

@@ -1,0 +1,124 @@
+.habilidades{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: auto;
+    padding-bottom: 5rem;
+}
+
+.habilidades .habilidades-fila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.habilidades-fila .habilidades-columna {
+    flex: 1 1 40rem;
+}
+
+.habilidades-columna .titulox {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.caja-habilidades .contenido-habilidades {
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.caja-habilidades .contenido-habilidades::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.caja-habilidades .contenido-habilidades:hover::before {
+    width: 100%;
+
+}
+
+.contenido-habilidades .progreso {
+    padding: 1rem 0;
+}
+
+.contenido-habilidades .progreso h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-habilidades .progreso h3 span {
+    color: var(--text-color);
+}
+
+.contenido-habilidades .progreso .bar {
+    height: 2.5rem;
+    border-radius: .6rem;border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.contenido-habilidades .progreso .bar span {
+    display: block;
+    height: 100%;border-radius: .3rem;
+    background: var(--main-color);
+}
+
+.habilidades-columna:nth-child(1) .contenido-habilidades .progreso:nth-child(1) .bar span {
+    width: 75%;
+}
+
+.habilidades-columna:nth-child(1) .contenido-habilidades .progreso:nth-child(2) .bar span {
+    width: 75%;
+}
+
+.habilidades-columna:nth-child(1) .contenido-habilidades .progreso:nth-child(3) .bar span {
+    width: 50%;
+}
+
+.habilidades-columna:nth-child(1) .contenido-habilidades .progreso:nth-child(4) .bar span {
+    width: 80%;
+}
+
+.habilidades-columna:nth-child(1) .contenido-habilidades .progreso:nth-child(5) .bar span {
+    width: 60%;
+}
+
+.habilidades-columna:nth-child(1) .contenido-habilidades .progreso:nth-child(6) .bar span {
+    width: 50%;
+}
+
+.habilidades-columna:nth-child(2) .contenido-habilidades .progreso:nth-child(1) .bar span {
+    width: 75%;
+}
+
+.habilidades-columna:nth-child(2) .contenido-habilidades .progreso:nth-child(2) .bar span {
+    width: 75%;
+}
+
+.habilidades-columna:nth-child(2) .contenido-habilidades .progreso:nth-child(3) .bar span {
+    width: 50%;
+}
+
+.habilidades-columna:nth-child(2) .contenido-habilidades .progreso:nth-child(4) .bar span {
+    width: 65%;
+}
+
+.habilidades-columna:nth-child(2) .contenido-habilidades .progreso:nth-child(5) .bar span {
+    width: 80%;
+}
+
+.habilidades-columna:nth-child(2) .contenido-habilidades .progreso:nth-child(6) .bar span {
+    width: 75%;
+}

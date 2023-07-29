@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components/cabecera.css">
+    <link rel="stylesheet" href="./assets/css/components/inicio.css">
+    <link rel="stylesheet" href="./assets/css/components/sobreMi.css">
+    <link rel="stylesheet" href="./assets/css/components/educacion.css">
+    <link rel="stylesheet" href="./assets/css/components/habilidades.css">
+    <link rel="stylesheet" href="./assets/css/components/contacto.css">
+    <link rel="stylesheet" href="./assets/css/components/experiencia.css">
+    <link rel="stylesheet" href="./assets/css/components/piePagina.css">
 
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,18 +24,17 @@
     <header class="header">
         <a href="" class="logo">Xavier.</a>
 
-        <div class="bx bx-menu" id="menu-icom">
-            
-        </div>
+        <div class="bx bx-menu" id="menu-icom"></div>
 
         <nav class="navbar">
-            <a href="#Inicio" class="activo">Inicio</a>
-            <a href="#Sobre mi">Sobre mi</a>
-            <a href="#Educacion">Educacion</a>
-            <a href="#Habilidades">Habilidades</a>
-            <a href="#Proyectos">Proyectos</a>
-            <a href="#Contacto">Contacto</a>
+            <a href="#inicio" class="activo">Inicio</a>
+            <a href="#sobre-mi">Sobre mi</a>
+            <a href="#educacion">Educacion</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#experiencia">Proyectos</a>
             
+            <span class="activo-nav"></span>
         </nav>
     </header>
 
@@ -56,9 +63,9 @@
         </div>
 
         <div class="inicio-redes--sociales">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.facebook.com/xavieralberto.castillovaron?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://github.com/castilloxavie" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/xavier-alberto-castillo-varon/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         </div>
 
         <div class="inicio-imghover"></div>
@@ -241,40 +248,138 @@
                 <div class="caja-habilidades">
                     <div class="contenido-habilidades">
                         <div class="progreso">
-                            <h3>HTML  <span>75%</span></h3>
+                            <h3>Git  <span>75%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progreso">
-                            <h3>CSS  <span>75%</span></h3>
+                            <h3>GitHub  <span>75%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progreso">
-                            <h3>JavaScript  <span>50%</span></h3>
+                            <h3>Gestor Base de datos Sql Server  <span>50%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progreso">
-                            <h3>python  <span>80%</span></h3>
+                            <h3>S.O Linux <span>65%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progreso">
-                            <h3>Django  <span>60%</span></h3>
+                            <h3>S.O Windows  <span>80%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progreso">
-                            <h3>SQL  <span>50%</span></h3>
+                            <h3>Gestor Base de datos MySql  <span>75%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </sectio>
+
+    <!-- diseño de la seccion de Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="titulo">Contacte<span>me!</span></h2>
+
+        <form action="#">
+            <div class="caja-entrada">
+                <div class="campo-entrada">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <span class="enfocar"></span>
+                </div>
+
+                <div class="campo-entrada">
+                    <input type="text" placeholder="Correo Electronico" required>
+                    <span class="enfocar"></span>
+                </div>
+            </div>
+
+            <div class="caja-entrada">
+                <div class="campo-entrada">
+                    <input type="number" placeholder="Numero de Celular" required>
+                    <span class="enfocar"></span>
+                </div>
+
+                <div class="campo-entrada">
+                    <input type="text" placeholder="Asunto" required>
+                    <span class="enfocar"></span>
+                </div>
+            </div>
+
+            <div class="texto-area">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Deje tu mensaje" required></textarea>
+                <span class="enfocar"></span>
+            </div>
+
+            <div class="boton-caja botones">
+                <button type="submit" class="boton">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- diseño de la seccion de proyecto -->
+
+    <section class="experiencia" id="experiencia">
+        <div class="contenedor-experiencia">
+            <h2 class="titulo">Experiencia <span>Profesional</span></h2>
+            <div class="contenedor-proyecto">
+
+                <div class="productos">
+
+                    <a href="https://main--warm-muffin-d106a8.netlify.app/" target="_blank">
+                        <img src="./assets/img-proyect/ecommer.png" alt="ecommers">
+                        <div>
+                            <h2 class="titul">E-commerce <span>Basico</span></h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="productos">
+
+                    <a href="https://main--jade-souffle-121ddf.netlify.app/" target="_blank">
+                        <img src="./assets/img-proyect/estructuracss.png" alt="frutasyfrutos">
+                        <div>
+                            <h2 class="titul">Fruta y Frutos <span>(Arquitectura CSS)</span></h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="productos">
+                    <a href="https://main--willowy-youtiao-98121b.netlify.app/" target="_blank">
+                        <img src="./assets/img-proyect/manipulacionDOM.png" alt="">
+                        <div>
+                            <h2 class="titul">TODO app <span>(manipulacion DOM)</span></h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="productos">
+                    <a href="https://main--amazing-daffodil-e1cd4c.netlify.app/" target="_blank">
+                        <img src="./assets/img-proyect/validacionFormulario.png" alt="">
+                        <div>
+                            <h2 class="titul">Formulario <span>(validacion formulario html)</span></h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- diseño del pie de pagina -->
+
+    <footer class="pie-pagina">
+        <div class="pie-pagina--texto">
+            <p>Copyright &copy; 2023 </p>
+            <p>Desarrollado por Xavier Castillo</p>
+            <p>xcastillovaron93@gmail.com</p>
+        </div>
+
+        <div class="pie-pagina--iconoArriba">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
